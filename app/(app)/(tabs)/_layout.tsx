@@ -1,12 +1,12 @@
-import { useTheme } from "@/hooks/useTheme";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { Tabs } from "expo-router";
+import { useTheme } from '@/hooks/useTheme';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { Tabs } from 'expo-router';
 
 export default function TabLayout() {
   const { getColor } = useTheme();
-  const textColor = getColor("text");
-  const backgroundColor = getColor("background");
-  const primary = getColor("primary");
+  const textColor = getColor('text');
+  const backgroundColor = getColor('background');
+  const primary = getColor('primary');
 
   return (
     <Tabs
@@ -22,18 +22,20 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          tabBarAccessibilityLabel: 'Chat',
+          title: 'Chat',
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="home" color={color} />
+            <FontAwesome size={28} name="comments" color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="profile"
         options={{
-          title: "Settings",
+          tabBarAccessibilityLabel: 'Profile',
+          title: 'Profile',
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="cog" color={color} />
+            <FontAwesome size={28} name="user" color={color} />
           ),
         }}
       />

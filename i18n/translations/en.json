@@ -1,0 +1,25 @@
+{
+  "auth_screen": {
+    "email": "Email",
+    "invalid_credentials": "Invalid credentials",
+    "password": "Password",
+    "sign-in": "Sign In"
+  },
+  "languages": {
+    "en": "English",
+    "pl": "Polish"
+  },
+  "profile_screen": {
+    "appearance": "Appearance",
+    "email":"Email:",
+    "email_placeholder":"Enter email",
+    "logout": "Log out",
+    "name":"Name:",
+    "name_placeholder":"Enter name",
+    "save":"Save",
+    "user_data_saved":"User data has been saved",
+    "user_data_error":"Something went wrong"
+  },
+  "chat_screen":{"message_placeholder":"Message...", "empty_state":"No messages yet", "message_error":"Something went wrong"},
+  "common": { "language": "Language" }
+}

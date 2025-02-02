@@ -1,6 +1,6 @@
-import { useTheme } from "@/hooks/useTheme";
-import { Controller } from "react-hook-form";
-import { StyleSheet, TextInput, TextInputProps } from "react-native";
+import { Controller } from 'react-hook-form';
+import { TextInputProps } from 'react-native';
+import { Input } from './Input';
 
 type ControlledInputProps = TextInputProps & {
   control: any;
@@ -12,35 +12,18 @@ export const ControlledInput = ({
   name,
   ...rest
 }: ControlledInputProps) => {
-  const { getColor } = useTheme();
-  const textColor = getColor("text");
-
   return (
     <Controller
       name={name}
       control={control}
       render={({ field }) => (
-        <TextInput
+        <Input
           {...rest}
-          autoCapitalize="none"
-          placeholderTextColor={textColor.disabled}
+          style={rest.style}
           onChangeText={field.onChange}
-          style={[styles.input, { color: textColor.primary }]}
           value={field.value}
         />
       )}
     />
   );
 };
-
-const styles = StyleSheet.create({
-  input: {
-    borderColor: "gray",
-    borderRadius: 5,
-    borderWidth: 1,
-    height: 40,
-    marginBottom: 10,
-    paddingHorizontal: 10,
-    width: "100%",
-  },
-});

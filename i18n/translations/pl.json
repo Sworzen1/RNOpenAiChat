@@ -1,0 +1,25 @@
+{
+  "auth_screen": {
+    "email": "E-mail",
+    "invalid_credentials": "Nieprawidlowe dane",
+    "password": "Haslo",
+    "sign-in": "Zaloguj sie"
+  },
+  "languages": {
+    "en": "Angielski",
+    "pl": "Polski"
+  },
+  "profile_screen": {
+    "appearance": "Wyglad",
+    "email":"E-mail:",
+    "email_placeholder":"Wpisz e-mail",
+    "logout": "Wyloguj",
+    "name":"Imie:",
+    "name_placeholder":"Wpisz imie",
+    "save":"Zapisz",
+    "user_data_saved":"Dane uzytkownika zostaly zapisane",
+    "user_data_error":"Cos poszlo nie tak"
+  },
+  "chat_screen":{"message_placeholder":"Wiadomosc...", "empty_state":"Brak wiadomosci", "message_error":"Cos poszlo nie tak"},
+  "common": { "language": "Jezyk" }
+}
