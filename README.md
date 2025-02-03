@@ -28,3 +28,8 @@ This is a mobile application built with Expo featuring:
    ```
 
 4. Scan QR code or run on simulator / emulator
+
+## 🎥 Demo
+
+https://github.com/user-attachments/assets/e6d69491-9ce3-454d-9c95-95e2aee39233
+
